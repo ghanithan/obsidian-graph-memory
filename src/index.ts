@@ -35,7 +35,7 @@ function parseInterval(value: string | undefined): number {
 async function main() {
   const server = new McpServer({
     name: "obsidian-graph-memory",
-    version: "1.0.0",
+    version: "1.0.1",
   });
 
   // Register all tools

@@ -1,11 +1,11 @@
 {
   "name": "obsidian-graph-memory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server exposing Obsidian vault graph structure as queryable tools",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "obsidian-graph-memory": "./dist/index.js"
+    "obsidian-graph-memory": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",
