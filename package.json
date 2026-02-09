@@ -4,10 +4,36 @@
   "description": "MCP server exposing Obsidian vault graph structure as queryable tools",
   "type": "module",
   "main": "dist/index.js",
+  "bin": {
+    "obsidian-graph-memory": "./dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghanithan/obsidian-graph-memory.git"
+  },
+  "keywords": [
+    "obsidian",
+    "mcp",
+    "graph",
+    "knowledge-graph",
+    "model-context-protocol"
+  ],
+  "author": "ghanithan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ghanithan/obsidian-graph-memory/issues"
+  },
+  "homepage": "https://github.com/ghanithan/obsidian-graph-memory#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",
     "zod": "^3.24.2"
